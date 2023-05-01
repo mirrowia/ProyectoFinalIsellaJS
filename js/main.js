@@ -73,7 +73,6 @@ async function fillList() {
       listaUsuario.push(usuario);
     });
 
-    () => {
       let usuario;
       usuario = new Usuario(
         "Solid",
@@ -126,7 +125,6 @@ async function fillList() {
       usuario.profilePicture =
         "https://i.pinimg.com/564x/40/58/fc/4058fc497b784fe0fd906ca36397c276.jpg";
       listaUsuario.push(usuario);
-    };
 
     localStorage.setItem("userList", JSON.stringify(listaUsuario));
   } else {
