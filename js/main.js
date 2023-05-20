@@ -37,7 +37,9 @@ async function fillList() {
   if (localStorage.getItem("userList") === null) {
     const getInfo = () => {
       return new Promise((resolve, reject) => {
-        fetch("https://swapi.dev/api/people")
+        fetch("./userList.json",{
+          mode: 'no-cors'
+        })
           .then((response) => response.json())
           .then((json) => resolve(json));
       });
@@ -51,6 +53,7 @@ async function fillList() {
       let edad = element.birth_year;
       let email;
       let password = element.height;
+      let profilePicture = element.profile_img;
 
       if (element.name.includes(" ")) {
         const [first, ...rest] = element.name.split(" ");
@@ -70,6 +73,7 @@ async function fillList() {
         password,
         listaUsuario
       );
+      usuario.profilePicture = profilePicture;
       listaUsuario.push(usuario);
     });
 
@@ -84,7 +88,7 @@ async function fillList() {
       );
 
       usuario.profilePicture =
-        "https://static.wikia.nocookie.net/metalgear/images/e/e9/SnakeI15.png/revision/latest?cb=20160722234931&path-prefix=es";
+        "https://i.pinimg.com/564x/38/93/8c/38938c64b58d712398d355ed7b6417a8--gear-art-metal-gear-solid.jpg";
       listaUsuario.push(usuario);
 
       usuario = new Usuario(
@@ -97,7 +101,7 @@ async function fillList() {
       );
 
       usuario.profilePicture =
-        "https://sm.ign.com/t/ign_es/gallery/d/death-stra/death-stranding-every-confirmed-character-so-far_skpd.960.jpg";
+        "https://www.femalefirst.co.uk/image-library/square/500/d/death-stranding-review-screenshot-2.jpg";
       listaUsuario.push(usuario);
 
       usuario = new Usuario(
@@ -110,7 +114,7 @@ async function fillList() {
       );
 
       usuario.profilePicture =
-        "https://i.pinimg.com/564x/b1/b2/cb/b1b2cb1fa43c79e52a86e51c448ac04e.jpg";
+        "https://depor.com/resizer/8AXMECCpLzwHsxlrc3pkhXwN-L4=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5VUDIBWTLBEKFLDHATMZMXMHLA.jpg";
       listaUsuario.push(usuario);
 
       usuario = new Usuario(
@@ -123,7 +127,7 @@ async function fillList() {
       );
 
       usuario.profilePicture =
-        "https://i.pinimg.com/564x/40/58/fc/4058fc497b784fe0fd906ca36397c276.jpg";
+        "https://cdna.artstation.com/p/assets/images/images/008/586/602/large/yoshifumi-hattori-seb-jacket-bust.jpg";
       listaUsuario.push(usuario);
 
     localStorage.setItem("userList", JSON.stringify(listaUsuario));

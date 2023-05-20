@@ -1,0 +1,68 @@
+{
+    "count": 82, 
+    "next": "https://swapi.dev/api/people/?page=2", 
+    "previous": null, 
+    "results": [
+        {
+            "name": "Luke Skywalker", 
+            "height": "172", 
+            "profile_img": "https://media.gq.com/photos/56da0101062ab67b27facbd2/1:1/w_1052,h_1052,c_limit/luke-skywalker-gay-.jpg",
+            "birth_year": "19BBY"
+        }, 
+        {
+            "name": "C-3PO", 
+            "height": "167", 
+            "profile_img": "https://lumiere-a.akamaihd.net/v1/images/6023eab8d941ed00018d113f-image_6f532508.jpeg?region=336%2C0%2C864%2C864",
+            "birth_year": "112BBY"
+            
+        }, 
+        {
+            "name": "R2-D2", 
+            "height": "96", 
+            "profile_img": "https://media.wired.co.uk/photos/606da2976a2b7484dab92f59/16:9/w_1920,h_1080,c_limit/star-wars-force-awakens-r2d2.jpg",
+            "birth_year": "33BBY" 
+        }, 
+        {
+            "name": "Darth Vader", 
+            "height": "202",
+            "profile_img": "https://media.revistagq.com/photos/62a0a996223a33e985e4d59a/4:3/w_1199,h_899,c_limit/1072434_110615-cc-Darth-Vader-Thumb.jpg", 
+            "birth_year": "41.9BBY"
+        }, 
+        {
+            "name": "Leia Organa", 
+            "height": "150",
+            "profile_img": "https://www.themarysue.com/wp-content/uploads/2017/08/leiatop1.jpg?resize=650%2C574",
+            "birth_year": "19BBY"
+        }, 
+        {
+            "name": "Owen Lars", 
+            "height": "178",
+            "profile_img": "https://pm1.narvii.com/6956/341d4af1646db654cf56cdd72ea71747a930840cr1-377-388v2_uhq.jpg",
+            "birth_year": "52BBY"
+        }, 
+        {
+            "name": "Beru Whitesun lars", 
+            "height": "165",
+            "profile_img": "https://pbs.twimg.com/media/FNhXaqPXsAYLil_.jpg", 
+            "birth_year": "47BBY"
+        }, 
+        {
+            "name": "R5-D4", 
+            "height": "97",
+            "profile_img": "https://http2.mlstatic.com/D_NQ_NP_663304-MLA43167759139_082020-O.jpg", 
+            "birth_year": "unknown"
+        }, 
+        {
+            "name": "Biggs Darklighter", 
+            "height": "183", 
+            "profile_img": "https://lumiere-a.akamaihd.net/v1/images/image_157136c7.png",
+            "birth_year": "24BBY"
+        }, 
+        {
+            "name": "Obi-Wan Kenobi", 
+            "height": "182",
+            "profile_img": "https://media.revistavanityfair.es/photos/60e839c5a8905e02065d9932/master/w_1600%2Cc_limit/177755.jpg", 
+            "birth_year": "57BBY"
+        }
+    ]
+}
